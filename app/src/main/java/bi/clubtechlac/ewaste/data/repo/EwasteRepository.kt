@@ -1,4 +1,4 @@
-package bi.clubtechlac.ewaste.data.repository
+package bi.clubtechlac.ewaste.data.repo
 
 
 import bi.clubtechlac.ewaste.data.model.Ewaste
