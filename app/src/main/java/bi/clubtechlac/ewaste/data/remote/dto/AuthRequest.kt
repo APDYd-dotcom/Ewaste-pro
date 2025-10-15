@@ -5,7 +5,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class AuthRegister(
-  val id: Int,
   @SerialName("phone_number") val phone: String,
   @SerialName("full_name") val fullName: String,
   val password: String

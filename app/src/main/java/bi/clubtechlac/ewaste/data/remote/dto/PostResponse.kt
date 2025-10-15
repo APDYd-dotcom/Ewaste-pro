@@ -5,7 +5,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class PostResponse(
+data class PostRequest(
   val id: Int,
   val user: User,
   val province: String,
