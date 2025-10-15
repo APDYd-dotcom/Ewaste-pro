@@ -14,6 +14,6 @@ data class PostRequest(
   val photo: String,
   @SerialName("product_name") val productName: String,
   val kilogramme: String,
-  val Status: Boolean,
+  val status: Boolean,
   val description: String
 )

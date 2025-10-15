@@ -1,6 +1,5 @@
 package bi.clubtechlac.ewaste.data.remote
 
-import androidx.compose.ui.autofill.ContentType
 import bi.clubtechlac.ewaste.data.remote.dto.AuthLogin
 import bi.clubtechlac.ewaste.data.remote.dto.AuthRegister
 import bi.clubtechlac.ewaste.data.remote.dto.AuthResponse
@@ -76,12 +75,11 @@ class ApiService (private val client: HttpClient) {
     }
 
 
-    suspend fun getPost() : PostRequest {
-      return client.get("$baseUlr/post/"){
+    suspend fun getPosts(): List<PostRequest> {
+      return client.get("$baseUlr/post/") {
         contentType(io.ktor.http.ContentType.Application.Json)
       }.body()
     }
-
 
 
 
